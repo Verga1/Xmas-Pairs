@@ -1,7 +1,7 @@
 # XMAS PAIRS
 
 This project is a simple yet challenging memory game with a user-friendly design. The goal of the project is to create a game
-that is both fun and challenging for users of all ages. The game will shuffle the cards at the star of each game and have a time limit to beat.
+that is both fun and challenging for users of all ages. The game will shuffle the cards at the start of each game and have a time limit to beat.
 
 ## UX
 
@@ -28,6 +28,12 @@ the player has an easy way around the game.
 
 The design of the game is intended to replicate the old classic matching pairs game with a slightly modernized touch to it.
 
+### Wireframes
+
+[Here](https://github.com/Verga1/Xmas-Pairs/tree/master/wireframes) are the designs I made for the site.
+
+The wireframes were made using [Balsamiq](https://balsamiq.com/)
+
 ## FEATURES
 
  - Game Instructions: Tells users how to play the game.
@@ -41,6 +47,20 @@ The design of the game is intended to replicate the old classic matching pairs g
  - Defense Function: The game will allow the same card to be flipped back to hidden until a second card has been selected to check for a match.
 
  ## TECHNOLOGIES USED
+
+- HTML
+This project uses HTML5 to provide the content and structure.
+- CSS
+The project uses CSS3 for styling.
+- Gitpod
+This project was developed using Gitpod as the IDE.
+- GitHub
+The project uses GitHub to host the repository and for the live preview of the site
+- Google Fonts:
+The project uses Google fonts to style the website fonts.
+- Javascript:
+The project uses JavaScript for game functions.
+
 
  ## TESTING
 
@@ -78,12 +98,14 @@ Further details on cloning a repository can be found on [GitHub](https://help.gi
 
 ### Content
 
- - I achieved base game functionality by following this tutorial by PortEXE
- - The game uses the Fisher-Yates shuffle to shuffle the cards.
+ - I achieved the base game functionality by following this tutorial by [PortEXE](https://youtu.be/3uuQ3g92oPQ).
+ - The game uses the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the cards.
 
  ### Media
 
-  - The background music was made by
-   - The card icons were made by 
+ - The background music was made by [Ashamaluevmusic](https://soundcloud.com/ashamaluevmusic).
+ - Sound effects were made by [Soundbible](https//:www.soundbible.com) and [Shockwave-sound](https://www.shockwave-sound.com/).
+ - The card icons were made by [Pixelperfect](https://www.flaticon.com/authors/pixel-perfect).
 
 ## Acknowledgements
+ - I received inspiration for this project from [WebDevSimplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) and [PortEXE](https://portexe.com/) on their [Mix-Or-Match](https://youtu.be/3uuQ3g92oPQ) project.
