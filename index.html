@@ -4,10 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href=".theia/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
         <title>Xmas Pairs</title>
 </head>
 <body>
-  
+    <h1 class="title">Xmas Pairs</h1>
+    <h3 class="instructions">Find the matching pairs</h3>
+    <div class="overlay-text visible">
+        Click To Start  
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        GAME OVER 
+            <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        YOU WIN 
+            <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-left">60</span>
+            </div>
+             <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/candy.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/candy.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/christmas-sock.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/christmas-sock.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/gift.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/gift.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/reindeer.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/reindeer.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/sled.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/sled.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/snowflake.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/snowflake.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/snowman.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/snowman.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/sweater.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="santa" src="assets/images/santa-claus.png" alt="santa">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-pic" src="assets/images/sweater.png">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
