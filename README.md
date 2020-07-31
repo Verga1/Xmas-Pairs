@@ -48,13 +48,13 @@ The wireframes were made using [Balsamiq](https://balsamiq.com/)
 
  ## TECHNOLOGIES USED
 
-- HTML
+- HTML:
 This project uses HTML5 to provide the content and structure.
-- CSS
+- CSS:
 The project uses CSS3 for styling.
-- Gitpod
+- Gitpod:
 This project was developed using Gitpod as the IDE.
-- GitHub
+- GitHub:
 The project uses GitHub to host the repository and for the live preview of the site
 - Google Fonts:
 The project uses Google fonts to style the website fonts.
