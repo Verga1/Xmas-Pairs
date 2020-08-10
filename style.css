@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas:100,200,300,400,500,600,700|Dancing+Script:100,200,300,400,500,600,700&display=swap');
 
-/* -------------------------------------Background */
+/* Background style*/
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
     background: radial-gradient(#ffffff, #ff0000);
 }
 
-/* -------------------------------------Title & Game Info */
+/* Title & Game Info position, size and style */
 
 .title {
     color: #00B32C;
@@ -45,7 +45,7 @@ body {
     font-size: 4em;
 }
 
-/* -------------------------------------Cards */
+/* Cards - grid, pic placement on front and back with styling */
 
 .game-container {
     display: grid;
@@ -131,7 +131,7 @@ body {
     width: 105px;
     height: 105px;
 }
-/* -------------------------------------Overlay */
+/* Overlay text and position */
 
 .overlay-text {
     position: fixed;

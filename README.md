@@ -5,38 +5,62 @@ that is both fun and challenging for users of all ages. The game will shuffle th
 
 ## UX
 
-### Player Experience
+### **Goals:**
+* To create simple matching pairs game accessible to anyone 
 
-- Players immediately experience an easy, clear and intuitive understanding of the game right away. Simple controls allow the player to promptly understand how to play the game. 
+* To have a loss condition in order to encourage repeat engagement from players
 
-- Inviting Christmas sounds & bright colours have been featured to give the player a festive feel.
-Winning & losing features have also been included with modal pop-ups & sounds to provide the player with additional challenges and goals to achieve.
+### **User Stories**
 
-- The player has no need for a back button or to reload the page. Easy and informative buttons have been provided at all times to ensure the
-the player has an easy way around the game.
+> Gary: I like to play games as a time killer when commuting
 
-### User Stories
+> Amy: I play quick games while waiting on my bus to pass the time
 
-### As a player, I'd like to see:
-    - A professional and strong looking game to draw the player into playing.
-    - Simple and easy to use controls to ensure that the game is not difficult to control.
-    - An information window showing clear information about how the game is played to avoid confusion.
-    - A sense of achievement and a goal to strive for whilst playing the game.
-    - Professional sounds which give a nice feel to their specific purpose.
+All the users gave similar replies. For them a simple game like Xmas Pairs 
+wasn't something they would commit a lot of time to but looked to play when they 
+were trying to pass time. This informed the game design in that it made clear 
+that the game needed to be easy to stop and started very easily and have a 
+goal which could be achieved in a short space of time. 
 
-### Design Ideas
+* The overlay screen can be clicked to immediately start the game
+* The timer starts to countdown from 60 Seconds upon activation
+* The card is flipped to reveal a picture upon being clicked
+* A second card is then flipped to see if picture matches
+* If the picture matches the cards remain flipped and a sound of jingle bells play
+* If the cards don't match they flip back over and can be chosen again
+* Play continues until all macthes are made or the timer runs out
 
-The design of the game is intended to replicate the old classic matching pairs game with a Christmas theme and a slightly modernized touch to it.
+### **Strategy**
+
+The aim was to create a very simple site that focused on the gameplay. A memory
+game using Christmas themed cards to make it accessible to all ages.
+
+### **Scope**
+
+Originally there were going to be a choice in difficulty from easy, medium and hard. 
+The aim was that this would appeal to a wider audience who could commit their time 
+and energy to a difficulty that suited them at any moment. Due to time the harder
+difficulties were ommited leaving the base game which is accessible to anyone.
+
+### **Structure**
+
+The site has three overlays and the main playing page. The initial overlay can be clicked in order for the game to begin.
+This opens the game page. The page contains 16 cards with 8 matching pairs. A countdown timer and flip counter are also included.
+There are two other End Game overlays if the player wins, or loses. Both can be clicked in order to restart the game.
+
+### **Skeleton**
+
+[Here](https://github.com/Verga1/Xmas-Pairs/tree/master/wireframes) are the designs I made for the site.
+
+The wireframes were made using [Balsamiq](https://balsamiq.com/)
+
+### **Surface**
 
 - **Font**: I wanted to use a single font throughout the site, it needed to look "festive" to fit in with the Christmas theme, with this in mind I decided to use [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas#glyphs) from [Google Fonts](https://fonts.google.com/).
 
 - **Colours**: I used red, white and 2 different shades of green to keep a Christmas style throughout.
 
-### Wireframes
 
-[Here](https://github.com/Verga1/Xmas-Pairs/tree/master/wireframes) are the designs I made for the site.
-
-The wireframes were made using [Balsamiq](https://balsamiq.com/)
 
 ## FEATURES
 

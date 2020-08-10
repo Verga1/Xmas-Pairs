@@ -153,11 +153,9 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    //Create Array from all elements with the 'card' class
+    //Create Array from all elements by class
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
-    //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
-    //Calls the MixOrMatch class and card array, sets the game timer
     let game = new MixOrMatch(60, cards);
 
     overlays.forEach(overlay => {
