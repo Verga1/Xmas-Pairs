@@ -32,6 +32,7 @@ class AudioController {
 }
 
 class MixOrMatch {
+    //Game Constructor
     constructor(totalTime, cards) {
         this.cardsArray = cards;
         this.totalTime = totalTime;
@@ -40,7 +41,7 @@ class MixOrMatch {
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
-
+    //Start Game Function wont let any cards be flipped for 0.5 secs
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
@@ -57,6 +58,7 @@ class MixOrMatch {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+    //Timer function, removes 1 every second
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -65,11 +67,13 @@ class MixOrMatch {
                 this.gameOver();
         }, 1000);
     }
+    //Game Over Function called when you lose
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
+    //Victory Function called when you beat the game
     victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
@@ -81,6 +85,7 @@ class MixOrMatch {
             card.classList.remove('matched');
         });
     }
+    //Flip card function adds 1 to total moves
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
@@ -95,7 +100,7 @@ class MixOrMatch {
             }
         }
     }
-
+    //Checks for two matching cards
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -104,6 +109,7 @@ class MixOrMatch {
 
         this.cardToCheck = null;
     }
+    //Card Match function pushes matched cards into matchedArray, checks for victory
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
@@ -113,6 +119,7 @@ class MixOrMatch {
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
+    //Cards Mis Match Function, hides both cards
     cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -121,7 +128,8 @@ class MixOrMatch {
             this.busy = false;
         }, 1000);
     }
-    shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
+    //Card shuffling algorithm based on Fisher-Yates shuffle
+    shuffleCards(cardsArray) {
         for (let i = cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
             cardsArray[randIndex].style.order = i;
@@ -131,6 +139,8 @@ class MixOrMatch {
     getCardType(card) {
         return card.getElementsByClassName('card-pic')[0].src;
     }
+    //Stops cards being fliped if there is a animation happening, if the card is part of a matched pair already, 
+    //and stops the same card being clicked once its been flipped
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
@@ -143,8 +153,11 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    //Create Array from all elements with the 'card' class
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
+    //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
+    //Calls the MixOrMatch class and card array, sets the game timer
     let game = new MixOrMatch(60, cards);
 
     overlays.forEach(overlay => {
@@ -160,3 +173,4 @@ function ready() {
         });
     });
 }
+

@@ -26,7 +26,11 @@ the player has an easy way around the game.
 
 ### Design Ideas
 
-The design of the game is intended to replicate the old classic matching pairs game with a slightly modernized touch to it.
+The design of the game is intended to replicate the old classic matching pairs game with a Christmas theme and a slightly modernized touch to it.
+
+- **Font**: I wanted to use a single font throughout the site, it needed to look "festive" to fit in with the Christmas theme, with this in mind I decided to use [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas#glyphs) from [Google Fonts](https://fonts.google.com/).
+
+- **Colours**: I used red, white and 2 different shades of green to keep a Christmas style throughout.
 
 ### Wireframes
 
@@ -41,7 +45,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.com/)
  - Game Timer: When the game starts a timer begins counting down from 60 when it hits zero the game is over.
  - Move Counter: Counts how many moves a user makes while playing.
  - Game Over Screen: When the timer hits zero the game over screen will appear allowing the users to try again.
- - Victory Screen: When the user has found all 10 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
+ - Victory Screen: When the user has found all 8 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
  - Defense Function: The game will not allow cards to be flipped if there is a card animation taking place.
  - Defense Function: The game will not allow a card to be flipped if it is part of a matched pair.
  - Defense Function: The game will allow the same card to be flipped back to hidden until a second card has been selected to check for a match.
