@@ -76,6 +76,11 @@ The wireframes were made using [Balsamiq](https://balsamiq.com/)
  2. The game will not allow a card to be flipped if it is part of a matched pair.
  3. The game will allow the same card to be flipped back to hidden until a second card has been selected to check for a match.
 
+ ### Features Left to Impliment
+
+* Game could have different levels with more matches to be made.
+* Game could use a scoring system based on how quick all matches were made.
+
  ## TECHNOLOGIES USED
 
 - HTML:
@@ -93,6 +98,17 @@ The project uses JavaScript for game functions.
 
 
  ## TESTING
+
+* The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no fatal syntax errors.
+* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox browsers.
+* Game was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
+* Game was forwarded to friends and family (including children) for feedback on user experience.
+
+### Bugs
+
+* Error was found using Markup Validator: Image elements were not using an alt attribute. This was corrected and Validator showed no errors after correction.
+* The endGame overlays text were not centered on some smartphones but still worked when tapped. Due to time constraints this will be corrected at a later date.
+* If matches are made in quick succession, the audio will only play for the first match made. Due to time constraints this will be corrected at a later date.
 
  ## DEPLOYMENT
 
