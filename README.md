@@ -1,5 +1,7 @@
 # XMAS PAIRS
 
+<img src="assets/images/screenshot.png" border="1px solid black">
+
 This project is a simple yet challenging memory game with a user-friendly design. The goal of the project is to create a game
 that is both fun and challenging for users of all ages. The game will shuffle the cards at the start of each game and have a time limit to beat.
 
