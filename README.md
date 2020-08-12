@@ -4,6 +4,7 @@
 
 This project is a simple yet challenging memory game with a user-friendly design. The goal of the project is to create a game
 that is both fun and challenging for users of all ages. The game will shuffle the cards at the start of each game and have a time limit to beat.
+[Demo of site](https://verga1.github.io/Xmas-Pairs/)
 
 ## UX
 
@@ -177,7 +178,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 2. In the list of repositories on the screen, select XMAS Pairs.
 3. In the menu items near the top of the page, select Settings.
 4. Scroll down to the GitHub Pages section.
-5. Under Source select the drop-down menu labelled None and select Master Branch
+5. Under Source select the drop-down menu labelled None and select Master Branch and hit save
 6. The Master Branch automatically refreshes the page, the website has now been deployed.
 7. Scroll down to the GitHub Pages section in order to retrieve the link to the deployed website.
 
@@ -190,7 +191,7 @@ Clone this project from GitHub:
 1. Click for the [GitHub repository].
 2. Near the top of the page, click the green button "Clone or download".
 3. In the Clone with HTTPs section, copy the clone URL for the repository.
-4. In your local IDE open Git Bash.
+4. Open your preferred IDE.
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type git clone, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
