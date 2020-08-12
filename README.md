@@ -99,14 +99,71 @@ The project uses JavaScript for game functions.
 
  ## TESTING
 
-* The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no fatal syntax errors.
-* Game was tested on Chrome, Safari, Edge, Mozilla & Firefox browsers.
-* Game was tested on various screens / sizes including desktop, laptop, iPhone & iPad.
-* Game was forwarded to friends and family (including children) for feedback on user experience.
+ ### Manual Testing
+Manual tests have been done throughout the development of the project.  
+The following test scenarios confirms that the website is behaving accordingly, and that bugs have been taken care of:
+
+### Navigation Testing
+
+#### Overlays
+1. Click on Start to Play overlay
+2. Verified that this will start the game
+3. When game ends click on You Win overlay or Game Over overlay
+4. Verified that game restarts
+
+#### Reset button
+1. Click on Reset button
+2. Verified that this refreshes page and shows Start Game overlay
+
+## Game Play Testing
+1. Click on Start to Play overlay
+2. Verified that countdown clock has started
+3. Click on card
+4. Verified it flips and adds total to flip countdown
+5. Click on second card
+6. Verified a third card can't be flipped during this time
+7. Verified if cards unmatched they flip back over
+8. Find matches
+9. Verfied that match audio plays, icons rotate and cards remain flipped
+10. When all matches are made verfiy you win overlay pops up and audio plays
+11. When timer runs out verify Game Over overlay pops up and audio plays
+
+### Browser and Mobile Devices Testing
+All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality except Safari.
+
+#### Browser Testing
+- Google Chrome 
+- Mozilla Firefox 
+- Microsoft Edge 
+- Safari
+
+#### Devices used
+
+ - HP Envy
+ - Lenovo ThinkPad
+ - iPhone XS
+
+
+#### Mobile Device Testing through Chrome DevTools
+- Moto G4 
+- Galaxy S5
+- iPhone 5/SE/6/7/8/Plus
+- iPad (Pro)
+
+
+## Key Issues and Code Validation
+### W3C Markup Validator
+* Error was found using Markup Validator: Image elements were not using an alt attribute. This was corrected and Validator showed no errors after correction.
+
+### W3C CSS Validator
+* No errors or warnings were found
+
+### Browser and mobile testing
+- No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge
+- Issue was found on using Safari on iPhone XS - cards were already flipped and game could not be played. This will be a pending issue and require the website to be altered in order to be compliant with Safari browser.
 
 ### Bugs
 
-* Error was found using Markup Validator: Image elements were not using an alt attribute. This was corrected and Validator showed no errors after correction.
 * The endGame overlays text were not centered on some smartphones but still worked when tapped. Due to time constraints this will be corrected at a later date.
 * If matches are made in quick succession, the audio will only play for the first match made. Due to time constraints this will be corrected at a later date.
 
