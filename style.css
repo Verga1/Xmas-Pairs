@@ -178,3 +178,14 @@ body {
         align-items: center;
     }
 }
+.reset {
+    background-color: #0DEF42;
+    border: none;
+    color: white;
+    font-size: 2em;
+    font-family: 'Mountains of Christmas', 'Dancing Script';
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
