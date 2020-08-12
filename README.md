@@ -188,8 +188,8 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 Clone this project from GitHub:
 
-1. Click for the [GitHub repository].
-2. Near the top of the page, click the green button "Clone or download".
+1. Click for the [GitHub repository](https://github.com/Verga1/Xmas-Pairs).
+2. Near the top of the page, click the green button "Code".
 3. In the Clone with HTTPs section, copy the clone URL for the repository.
 4. Open your preferred IDE.
 5. Change the current working directory to the location where you want the cloned directory to be made.
